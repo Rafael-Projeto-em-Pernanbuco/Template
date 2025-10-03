@@ -1,0 +1,213 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(#b30059, #f8bbd0); /* Rosa escuro para claro */
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* CABEÇALHO */
+header, footer {
+  background-color: #b30059;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+/* CONTAINER GERAL */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* REDES SOCIAIS */
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social-buttons a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #d81b60;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s;
+}
+
+.social-buttons a:hover {
+  background-color: #ad1457;
+}
+
+/* FORMULÁRIO DE E-MAIL */
+.email-form {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.email-form h2 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.email-form input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.email-form button {
+  padding: 10px 20px;
+  background-color: #b30059;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.email-form button:hover {
+  background-color: #880e4f;
+}
+
+/* ANÚNCIO / OFERTAS */
+.announcement {
+  background-color: #f06292; /* Rosa médio */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.announcement ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.announcement li {
+  margin-bottom: 10px;
+}
+
+/* MAPA */
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* GOOGLE TRADUTOR */
+#google_translate_element {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* CHAT */
+.chat-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #b30059;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  color: white;
+  z-index: 1000;
+}
+
+.chat-box h3 {
+  margin-bottom: 10px;
+}
+
+.chat-box textarea {
+  width: 100%;
+  height: 60px;
+  resize: none;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.chat-box button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #880e4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.chat-box button:hover {
+  background-color: #6a0d3c;
+}
+
+.audio-recorder {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.audio-recorder button {
+  background-color: #f06292;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.3s;
+}
+
+.audio-recorder button:hover {
+  background-color: #ec407a;
+}
+
+/* RODAPÉ */
+footer p {
+  font-size: 14px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .chat-box {
+    width: 90%;
+    right: 5%;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-form input[type="email"] {
+    width: 80%;
+  }
+
+  .email-form button {
+    width: 80%;
+    margin-top: 10px;
+  }
+}
